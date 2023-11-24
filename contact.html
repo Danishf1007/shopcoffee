@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Shop Of coffee</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="Image/newlogokopi.png" alt="">
+    </a>
+    
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">contact</a>
+      <a href="store.html">store</a>
+  </nav>
+
+
+    <div class="icons">
+    
+        
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+   
+    <div class="cart-items-container">
+        <a href="#" class="btn"  >checkout now</a>
+    </div>
+
+</header>
+<section class="contact" id="contact">
+
+    <h1 class="heading" style="margin-top: 100px;"> contact te<span>am Members</span></h1>
+  
+    <div class="row">
+  
+      <form action="">
+        <h3>Ask Us</h3>
+  
+        <div class="inputBox">
+          <span class="fas fa-user-circle"></span>
+          <input type="text" placeholder="Your name ..." id="textInput" required>
+        </div>
+  
+        <div class="inputBox">
+          <span class="fas fa-envelope-open"></span>
+          <input type="email" placeholder="email ..." id="emailAddressInput" required>
+        </div>
+  
+        <div class="inputBox">
+          <span class="fas fa-mobile"></span>
+          <input type="number" placeholder="+60" id="mobileNumberInput" required>
+        </div>
+
+        <div class="inputBox">
+          <span class="fas fa-bookmark"></span>
+          <input type="number" placeholder="poskod..." id="poskotInput" required>
+        </div>
+
+        <div class="inputBox">
+          <span class="fas fa-comment"></span>
+          <input type="text" placeholder="Comment..." id="commentInput" required>
+        </div>
+
+  
+        <input type="submit" value="Contact Now" class="btn" onclick="submitForm()">
+    <script src="script.js"></script>
+    <script>
+    function submitForm() {
+          const name = document.getElementById('textInput').value;
+          const emailAddress = document.getElementById('emailAddressInput').value;
+          const mobileNumber = document.getElementById('mobileNumberInput').value;
+          const poskot = document.getElementById('poskotInput').value;
+          const comment = document.getElementById('commentInput').value;
+
+          if (!mobileNumber || !emailAddress || !comment) {
+            alert('Please fill in all required fields.');
+            return false;
+          }
+
+          // Submit the form data (mobileNumber, emailAddress, comment) to the server
+          // or perform other actions as needed
+
+          alert('Your message has been sent. We will contact you soon.');
+          return true;
+        }
+    </script>
+    <section class="footer">
+
+    <div class="share">
+        <a href="https://www.facebook.com/NORTHERNCOFFEE23/" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/northern_coffee23/" class="fab fa-instagram"></a>
+    </div>
+    <div class="credit">&copy;prepared By <br> WAN MUHAMMAD DANISH AIMAN</div>
+</section>
+</body>
+</html>
